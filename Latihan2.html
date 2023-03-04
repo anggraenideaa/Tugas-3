@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Kalkulator Sederhana</title>
+</head>
+<body>
+<script language="javascript">
+	
+	
+	
+	function penjumlahan() {
+		var bil1 = document.kirim.T1.value
+		var bil2 = document.kirim.T2.value
+		document.kirim.T3.value= parseInt(bil1) + parseInt(bil2)
+	
+	}
+	function pengurangan() {
+		var bil1 = document.kirim.T1.value
+		var bil2 = document.kirim.T2.value
+		document.kirim.T3.value = parseInt(bil1) - parseInt(bil2)
+	
+	}
+	function perkalian() {
+		var bil1 = document.kirim.T1.value
+		var bil2 = document.kirim.T2.value
+		document.kirim.T3.value = parseInt(bil1) * parseInt(bil2)
+	
+	}
+	function pembagian() {
+		var bil1 = document.kirim.T1.value
+		var bil2 = document.kirim.T2.value
+		document.kirim.T3.value = parseInt(bil1) / parseInt(bil2)
+	}
+
+	//!--
+	var last = document.write("<br> Dimodifikasi terakhir pada <br>" + document.lastModified);
+	//-->
+
+</script>
+
+<form method="POST" name="kirim">
+	<br>
+	<p>
+		Bil1 <input type="text" id="T1" size="20">
+		Bil2<input type="text" id="T2" size="20">
+	<p>
+	<p>
+		Hasil <input type="text" id="T3" size="20">
+	</p>
+	<p>
+
+		<input type="button" value="+" name="jumlah" onclick = penjumlahan()>
+		<input type="button" value="-" name="kurang" onclick = pengurangan()>
+		<input type="button" value="*" name="kali" onclick = perkalian()>
+		<input type="button" value="/" name="bagi" onclick = pembagian()>
+	</p>
+	
+</form>
+</body>
+</html>
